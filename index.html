@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalm &amp; Pebble — Join the Waitlist</title>
+<meta name="description" content="A 30-night, faith-filled bedtime program for kids ages 3–7. Join the Psalm & Pebble waitlist and get Night 1 free.">
+<meta property="og:title" content="Brave nights with Jesus — Psalm & Pebble">
+<meta property="og:description" content="A 30-night, faith-filled bedtime program for kids ages 3–7. Join the waitlist and get Night 1 free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="hero-img.webp" type="image/webp">
+<style>
+  :root{
+    --navy:#1F2A44;
+    --navy-deep:#151D31;
+    --gold:#C9A25E;
+    --gold-soft:#E3C98B;
+    --cream:#F7F2E9;
+    --ink:#2B2B2B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--cream);background:var(--navy-deep);line-height:1.6;overflow-x:hidden}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;padding:40px 6vw}
+  .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .hero-bg picture,.hero-bg img{display:block;width:100%;height:100%}
+  .hero-bg img{object-fit:cover;object-position:30% center}
+  /* darken the right side where the box sits, keep the kids bright */
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,29,49,0) 30%,rgba(21,29,49,.55) 70%,rgba(21,29,49,.75) 100%),linear-gradient(0deg,rgba(21,29,49,.6) 0%,rgba(21,29,49,0) 30%)}
+
+  .box{position:relative;z-index:1;width:100%;max-width:440px;padding:28px 26px 24px;border-radius:22px;background:rgba(21,29,49,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(201,162,94,.35);box-shadow:0 24px 60px rgba(0,0,0,.45);text-align:center}
+
+  .logo{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:14px}
+  .logo svg{width:44px;height:auto}
+  .wordmark{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;letter-spacing:.02em}
+  .wordmark em{font-style:normal;color:var(--gold)}
+
+  .eyebrow{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,162,94,.5);padding:4px 12px;border-radius:999px;margin-bottom:12px}
+  h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(1.9rem,5vw,2.4rem);line-height:1.12;margin-bottom:8px}
+  h1 span{color:var(--gold)}
+  .sub{font-size:.98rem;color:rgba(247,242,233,.88);margin-bottom:16px}
+  .gift{font-size:.9rem;color:var(--gold-soft);margin-bottom:14px}
+  .gift strong{color:var(--cream)}
+
+  form{text-align:left}
+  label{display:block;font-weight:700;font-size:.82rem;color:rgba(247,242,233,.9);margin:10px 0 5px}
+  label .opt{font-weight:400;color:rgba(247,242,233,.6)}
+  input,select{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border:1.5px solid transparent;border-radius:10px;background:var(--cream);color:var(--ink);outline:none;transition:border-color .2s}
+  input:focus,select:focus{border-color:var(--gold)}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+  button{margin-top:16px;width:100%;font:inherit;font-weight:700;font-size:1.05rem;padding:14px;border:0;border-radius:12px;background:var(--gold);color:var(--navy-deep);cursor:pointer;transition:transform .15s,background .2s}
+  button:hover{background:#D6B272}
+  button:active{transform:scale(.98)}
+  button[disabled]{opacity:.7;cursor:wait}
+  .fine{margin-top:10px;font-size:.78rem;color:rgba(247,242,233,.6);text-align:center}
+  .hidden{display:none}
+  .error{margin-top:10px;color:#F2A7A0;font-size:.88rem;text-align:center}
+
+  .thanks{padding:8px 0}
+  .thanks svg{width:46px;margin-bottom:8px}
+  .thanks h2{font-family:'Fraunces',serif;font-weight:500;font-size:1.5rem;margin-bottom:6px}
+  .thanks p{color:rgba(247,242,233,.85)}
+
+  .sub em{font-style:italic;color:var(--cream);font-family:'Fraunces',serif}
+
+  /* ---------- RESULT ---------- */
+  .result{max-width:860px;margin:0 auto;padding:64px 20px 8px;text-align:center}
+  .result h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(1.6rem,4.5vw,2.1rem);margin-bottom:26px}
+  .result h2 span{color:var(--gold)}
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left}
+  .col{border-radius:18px;padding:22px 22px 18px}
+  .col h3{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+  .col ul{list-style:none}
+  .col li{position:relative;padding-left:28px;margin-bottom:12px;font-size:.98rem}
+  .col li::before{position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;font-weight:700}
+  .before{background:rgba(247,242,233,.04);border:1px solid rgba(247,242,233,.12)}
+  .before h3{color:rgba(247,242,233,.55)}
+  .before li{color:rgba(247,242,233,.6)}
+  .before li::before{content:"✕";background:rgba(247,242,233,.1);color:rgba(247,242,233,.55)}
+  .after{background:rgba(201,162,94,.1);border:1px solid rgba(201,162,94,.5)}
+  .after h3{color:var(--gold)}
+  .after li{color:var(--cream)}
+  .after li::before{content:"✓";background:var(--gold);color:var(--navy-deep)}
+  .after em{font-family:'Fraunces',serif;color:var(--gold-soft)}
+  .you{margin:22px 0 18px;font-family:'Fraunces',serif;font-style:italic;font-size:1.1rem;color:rgba(247,242,233,.9)}
+  .cta{display:inline-block;font-weight:700;font-size:1.02rem;padding:13px 28px;border-radius:12px;background:var(--gold);color:var(--navy-deep);text-decoration:none}
+  .cta:hover{background:#D6B272}
+  html{scroll-behavior:smooth}
+  input#email{scroll-margin-top:120px}
+
+  /* ---------- PERSUASION SECTIONS ---------- */
+  section.why,section.faith,section.inside,section.free{max-width:860px;margin:0 auto;padding:64px 20px 0;text-align:center}
+  section h2 span{color:var(--gold)}
+  .why h2,.faith h2,.inside h2,.free h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(1.55rem,4.5vw,2.1rem);line-height:1.2;margin-bottom:16px}
+  .lead{max-width:640px;margin:0 auto 14px;color:rgba(247,242,233,.85);font-size:1.03rem}
+  .needs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0;text-align:left}
+  .need{border:1px solid rgba(201,162,94,.3);border-radius:16px;padding:18px}
+  .need i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold);color:var(--navy-deep);font-style:normal;font-weight:700;margin-bottom:10px}
+  .need b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:1.12rem;margin-bottom:6px}
+  .need span{font-size:.94rem;color:rgba(247,242,233,.8)}
+  .bridge{font-family:'Fraunces',serif;font-style:italic;font-size:1.12rem;color:var(--gold-soft);max-width:620px;margin:0 auto}
+  .faith p{max-width:640px;margin:0 auto 14px;color:rgba(247,242,233,.88);font-size:1.05rem}
+  .verse-inline{font-family:'Fraunces',serif;font-style:italic;color:var(--cream)!important;font-size:1.15rem!important;margin-top:18px!important}
+  .verse-inline small{display:block;font-family:'Nunito',sans-serif;font-style:normal;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+  .items{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px;text-align:left}
+  .item{background:rgba(247,242,233,.04);border:1px solid rgba(247,242,233,.12);border-radius:14px;padding:16px 18px}
+  .item b{display:block;color:var(--gold);font-weight:700;margin-bottom:3px}
+  .item span{font-size:.94rem;color:rgba(247,242,233,.82)}
+  .free-card{max-width:560px;margin:0 auto;text-align:left;border-radius:22px;padding:28px 26px;background:rgba(201,162,94,.1);border:1px solid rgba(201,162,94,.55)}
+  .free-card .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .free-card p{color:rgba(247,242,233,.85);margin-bottom:12px}
+  .free-card ul{list-style:none;margin-bottom:22px}
+  .free-card li{position:relative;padding-left:26px;margin-bottom:10px;font-size:.97rem;color:rgba(247,242,233,.88)}
+  .free-card li::before{content:"★";position:absolute;left:0;top:0;color:var(--gold)}
+  .free-card li b{color:var(--cream)}
+  .free-card .cta{display:block;text-align:center}
+  @media (max-width:760px){.needs,.items{grid-template-columns:1fr}}
+
+  /* ---------- BELOW THE FOLD ---------- */
+  .free{padding-bottom:30px!important}
+  .parts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:26px 0 8px;text-align:left}
+  .part{border:1px solid rgba(201,162,94,.3);border-radius:14px;padding:14px 16px}
+  .part b{display:block;color:var(--gold);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+  .part span{font-size:.95rem;color:rgba(247,242,233,.85)}
+  .verse{margin-top:40px;font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:rgba(247,242,233,.8)}
+  .verse small{display:block;font-family:'Nunito',sans-serif;font-style:normal;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+  .social{margin-top:30px;display:flex;justify-content:center;gap:18px}
+  .social a{color:rgba(247,242,233,.7);text-decoration:none;font-size:.9rem;font-weight:600}
+  .social a:hover{color:var(--gold)}
+  footer{text-align:center;font-size:.8rem;color:rgba(247,242,233,.45);padding:10px 16px 28px}
+
+  /* ---------- PHONES ---------- */
+  @media (max-width:760px){
+    .hero{display:block;min-height:0;padding:0 16px 8px}
+    .hero-bg{position:relative;inset:auto;height:44vw;min-height:180px;max-height:300px;margin:0 -16px}
+    .hero-bg img{object-position:35% 45%}
+    .hero-bg::after{background:linear-gradient(0deg,var(--navy-deep) 0%,rgba(21,29,49,0) 55%)}
+    .box{margin:-56px auto 0;padding:20px 18px 18px;max-width:480px}
+    .logo{flex-direction:row;justify-content:center;gap:8px;margin-bottom:10px}
+    .logo svg{width:28px}
+    .wordmark{font-size:1rem}
+    .eyebrow{display:none}
+    .sub{font-size:.92rem;margin-bottom:12px}
+    .parts{grid-template-columns:1fr}
+    .compare{grid-template-columns:1fr}
+    .result{padding-top:44px}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-bg">
+    <picture>
+      <source srcset="hero-img.webp" type="image/webp">
+      <img src="hero-img.webp" width="1536" height="1024" fetchpriority="high"
+           alt="Ellie and her little brother Sam, holding his toy lamb Pip, look out a bedroom window at a starry night sky">
+    </picture>
+  </div>
+
+  <div class="box">
+    <div class="logo" aria-label="Psalm & Pebble">
+      <svg viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M40 2 l3.2 7.2 7.8.8-5.9 5.2 1.7 7.7L40 19l-6.8 3.9 1.7-7.7-5.9-5.2 7.8-.8z" fill="#C9A25E"/>
+        <path d="M38 34 C28 28 14 28 4 32 V68 C14 64 28 64 38 70 Z" fill="#F7F2E9"/>
+        <path d="M42 34 C52 28 66 28 76 32 V68 C66 64 52 64 42 70 Z" fill="#F7F2E9"/>
+        <path d="M38 34 V70 M42 34 V70" stroke="#C9A25E" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div class="wordmark">Psalm <em>&amp;</em> Pebble</div>
+    </div>
+
+    <div id="formWrap">
+      <span class="eyebrow">Coming soon</span>
+      <h1>Brave nights with <span>Jesus</span></h1>
+      <p class="sub">From <em>"Don't turn off the light!"</em> to <em>"Goodnight, God."</em> A 30-night, 5-minute bedtime program for kids 3–7.</p>
+      <p class="gift">🎁 <strong>Join the waitlist</strong> and get Night 1 free: story, verse, prayer, brave breath and coloring page.</p>
+
+      <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="waitlistForm">
+        <input type="hidden" name="form-name" value="waitlist">
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label for="email" class="sr">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="Your email address" required>
+
+        <button type="submit" id="submitBtn">Send me Night 1 free</button>
+        <p class="error hidden" id="errorMsg">Something went wrong. Please try again.</p>
+        <p class="fine">No spam, ever. Unsubscribe anytime.</p>
+      </form>
+    </div>
+
+    <div class="thanks hidden" id="thanks" role="status">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6 6.4.6-4.9 4.3 1.5 6.3L12 16l-5.6 3.2 1.5-6.3L3 8.6 9.4 8z" fill="#C9A25E"/></svg>
+      <h2>You're on the list!</h2>
+      <p>Thank you for joining us. Your free Night 1 is on its way soon, and you'll be the first to know when we launch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="result">
+  <h2>From scary nights to <span>brave nights</span></h2>
+  <div class="compare">
+    <div class="col before">
+      <h3>Bedtime now</h3>
+      <ul>
+        <li>"Leave the light on!" and one more check under the bed</li>
+        <li>Calling out for you again and again</li>
+        <li>Bedtime drags on and everyone ends up exhausted</li>
+        <li>Small worries feel huge once the lights go off</li>
+      </ul>
+    </div>
+    <div class="col after">
+      <h3>After 30 brave nights</h3>
+      <ul>
+        <li>A calm 5-minute routine your child looks forward to</li>
+        <li>A verse and a prayer they can say on their own when they feel scared</li>
+        <li>A brave breath to settle down: <em>"God is with me. I am safe."</em></li>
+        <li>Lights off, knowing Jesus is watching over them</li>
+      </ul>
+    </div>
+  </div>
+  <p class="you">And for you: evenings that end in a prayer together, not a battle.</p>
+  <a class="cta" href="#email">Send me Night 1 free</a>
+</section>
+
+<section class="why">
+  <h2>Why <span>"there's nothing to be scared of"</span> doesn't work</h2>
+  <p class="lead">Between ages 3 and 7, a child's imagination grows faster than their ability to tell what's real. A shadow becomes a monster. A creak becomes a stranger. Their fear is real to them, and when we say "it's nothing," they only hear that they're alone with it.</p>
+  <p class="lead">What scared children actually need at bedtime are three things:</p>
+  <div class="needs">
+    <div class="need"><i>1</i><b>To know they're not alone</b><span>Every night, Ellie and Sam face the same fear your child has. Kids learn best from characters like them. When Sam is brave, your child believes they can be too.</span></div>
+    <div class="need"><i>2</i><b>Something to do when they're scared</b><span>A simple prayer and a brave breath they can use on their own, even at 2am when you're asleep down the hall.</span></div>
+    <div class="need"><i>3</i><b>Someone bigger watching over them</b><span>A short Bible verse each night, so the last thought before sleep isn't "what's in the dark?" but "God is with me."</span></div>
+  </div>
+  <p class="bridge">That's exactly what each 5-minute night gives them, one fear at a time, for 30 nights, until bravery becomes a habit.</p>
+</section>
+
+<section class="faith">
+  <h2>A faith they can hold <span>in the dark</span></h2>
+  <p>This isn't only about getting through bedtime. Every night, your child hides one more verse in their heart and learns to talk to God in their own words. Scared at 4, nervous at 9, anxious at 15: they'll already know where to turn.</p>
+  <p class="verse-inline">"What time I am afraid, I will trust in thee." <small>Psalm 56:3 (KJV)</small></p>
+</section>
+
+<section class="inside">
+  <h2>Everything in the <span>full program</span></h2>
+  <p class="lead">Designed to print at home. Nothing to ship, nothing to wait for.</p>
+  <div class="items">
+    <div class="item"><b>30 Night Cards</b><span>One fear per night: the dark, monsters, bad dreams, storms, being alone. Each with a 1-minute story, a verse, a prayer and a brave breath.</span></div>
+    <div class="item"><b>Listen-along audio</b><span>Scan the QR on each card to hear the story read aloud with soft music. Perfect for tired nights.</span></div>
+    <div class="item"><b>My Brave Star Map</b><span>Your child colors one star each night. After night 30, the stars connect into a hidden picture they'll never forget.</span></div>
+    <div class="item"><b>Coloring pages</b><span>Every story scene to color, with the verse on the page, so the night's lesson sticks through their own creativity.</span></div>
+    <div class="item"><b>Angel Guard Spray label</b><span>Turn any spray bottle into a reminder of Psalm 91:11: God gives His angels charge over them.</span></div>
+    <div class="item"><b>"Give It to Jesus" Worry Box</b><span>Kids draw or tell their worry, put it in the box, and give it to Jesus before bed.</span></div>
+    <div class="item"><b>Door hanger</b><span>"Jesus is watching over me tonight." The last thing they see before the lights go out.</span></div>
+    <div class="item"><b>Peaceful Nights Log</b><span>A simple parent tracker with a week 1 vs week 4 page, so you can see the change for yourself.</span></div>
+    <div class="item"><b>Parent guide</b><span>Exactly what to say when your child wakes up scared at 2am, and how to keep the routine going.</span></div>
+    <div class="item"><b>Brave Heart certificate</b><span>Celebrate 30 brave nights with a certificate your child will be proud to hang up.</span></div>
+  </div>
+</section>
+
+<section class="free">
+  <div class="free-card">
+    <span class="tag">Free for waitlist members</span>
+    <h2>Try Night 1 free</h2>
+    <p>Everything from the first night, ready to print:</p>
+    <ul>
+      <li><b>The story:</b> Sam's first brave night, so your child sees they're not the only one who gets scared</li>
+      <li><b>The verse:</b> one short promise from God to hold onto</li>
+      <li><b>The prayer and brave breath:</b> words and a calming breath they can use on their own</li>
+      <li><b>The coloring page:</b> Sam and Pip's story scene, so your child can picture it with their own colors</li>
+      <li><b>The first star</b> of the Brave Star Map, plus a peek at what Sam faces on Night 2</li>
+    </ul>
+    <a class="cta" href="#email">Send me Night 1 free</a>
+  </div>
+
+  <p class="verse">"I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety."<small>Psalm 4:8 (KJV)</small></p>
+
+  <nav class="social">
+    <!-- Replace # with your profile links -->
+    <a href="https://www.instagram.com/psalmandpebble/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/Psalmandpebble/" target="_blank" rel="noopener">Facebook</a>
+  </nav>
+</section>
+
+<footer>© <span id="yr"></span> Psalm &amp; Pebble</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Send signups to MailerLite (primary) and Netlify Forms (backup copy)
+  const ML_URL = 'https://assets.mailerlite.com/jsonp/2720327/forms/201586140239628188/subscribe';
+  fetch('https://assets.mailerlite.com/jsonp/2720327/forms/201586140239628188/takel').catch(() => {}); // counts form views in MailerLite
+
+  const form = document.getElementById('waitlistForm');
+  const btn = document.getElementById('submitBtn');
+  const err = document.getElementById('errorMsg');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (form.elements['bot-field'].value) return; // spam bot
+    err.classList.add('hidden');
+    btn.disabled = true;
+    btn.textContent = 'Joining…';
+
+    const ml = new URLSearchParams({
+      'fields[email]': form.elements['email'].value.trim(),
+      'ml-submit': '1',
+      'anticsrf': 'true'
+    });
+
+    try {
+      await fetch(ML_URL, { method: 'POST', mode: 'no-cors', body: ml });
+      // backup copy in Netlify Forms (only works when hosted on Netlify; failure is ignored)
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).catch(() => {});
+      document.getElementById('formWrap').classList.add('hidden');
+      document.getElementById('thanks').classList.remove('hidden');
+    } catch (_) {
+      err.classList.remove('hidden');
+      btn.disabled = false;
+      btn.textContent = 'Send me Night 1 free';
+    }
+  });
+</script>
+</body>
+</html>
